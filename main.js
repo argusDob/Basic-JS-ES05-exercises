@@ -281,6 +281,49 @@ reformatAboveCode('Employee')
 reformatAboveCode('');
 reformatAboveCode('peace')
 
+//Logical Operators
+
+
+console.log( 1 || 0 ); 
+console.log( true || 'no matter what' ); 
+
+console.log( null || 1 ); 
+console.log( null || 0 || 1 ); 
+console.log( undefined || null || 0 ); //all are false so return just the last value :) :) 
+
+
+
+// i cannot understand here why return the default user
+
+function getTheFirstTruthyValue(){
+    let currentUser = null;
+    let defaultUser = 'John';
+    let name = currentUser || defaultUser || "unamed"
+    console.log(name);
+    
+}
+
+function shortCircuit(){
+    let x;
+    true || (x = 1);
+    console.log(x);
+}
+shortCircuit(); //Ofcourse is undefined because we have not devclare the x if the operator is
+// false  || (x = 1) ==> x=1
+
+function andOperator(){
+    let hour = 12;
+    let minutes 30;
+    
+    if(hour == 12 && minute == 30){ // T && T ==> T
+        console.log("The time is 12.30")
+    }
+}
+
+andOperator();
+
+
+
 
 
 

@@ -16,7 +16,7 @@ switch(a){
     default:
         console.log("I dont know such values");
 }
-//In the case that i wont use breaj the execution continues from the reached point untill the end of the statement
+//In the case that i wont use break the execution continues from the reached point until the end of the statement
 
 switch(a){
     case 3:

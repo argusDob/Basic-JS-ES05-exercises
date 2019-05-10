@@ -160,6 +160,7 @@ switch(z){
 //    
 }
 
+
 //Conditional operators: if, '?'
 
 
@@ -225,6 +226,60 @@ function checkIfYouAreDead(){
 }
 
 checkIfYouAreDead();
+
+
+//
+
+//
+//Rewrite this if using the ternary operator '?':
+//
+//if (a + b < 4) {
+//  result = 'Below';
+//} else {
+//  result = 'Over';
+//}
+
+
+function rewriteCode(arg1,arg2,){
+    let a,b;
+    let message = ((a + b)  < 4) ? "Below":
+    'Over';
+    console.log(message);
+    
+}
+
+rewriteCode(1, 1);
+
+//Rewrite 'if..else' into '?'
+
+
+//function fn(){
+//    let message;
+//if (login == 'Employee') {
+//  message = 'Hello';
+//} else if (login == 'Director') {
+//  message = 'Greetings';
+//} else if (login == '') {
+//  message = 'No login';
+//} else {
+//  message = '';
+//}
+//}
+
+
+function reformatAboveCode(login){
+
+    let message = (login == 'Employee') ? 'Hello':
+    (login == 'Director') ? 'Greetings' : 
+    (login == '') ? 'No login' : 
+    'lalalal';
+    console.log(message);
+ }
+
+reformatAboveCode('Director')
+reformatAboveCode('Employee')
+reformatAboveCode('');
+reformatAboveCode('peace')
 
 
 

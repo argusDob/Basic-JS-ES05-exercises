@@ -57,7 +57,7 @@ switch(d){
         console.log('You have to go back to school');
     break;
     default:
-        console.log("Something ios going total wronge")
+        console.log("Something ios going total wrong")
 }
 
 

@@ -357,4 +357,11 @@ function checkAgeRange(){
 }
 checkAgeRange()
 
+//What will the results of the expressions be inside if(...)?
+
+if (-1 || 0) alert( 'first' ); // F || F = True;
+if (-1 && 0) alert( 'second' ); // T && F = False
+if (null || -1 && 1) alert( 'third' ); // F || F || T ==>T (execute)
+
+
 

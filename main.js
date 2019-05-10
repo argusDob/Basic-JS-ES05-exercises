@@ -343,8 +343,18 @@ alert( null && 5 ); // null
 alert( 0 && "no matter what" ); // 0
 
 
+//Write an “if” condition to check that age is between 14 and 90 inclusively.
+//“Inclusively” means that age can reach the edges 14 or 90.
 
-
-
+function checkAgeRange(){
+    let age = prompt("Enter an age?", "")
+    if(age >= 14 || age <= 90){
+        console.log("I the age range")
+    }
+    else{
+        console.log("Outside of the range")
+    }
+}
+checkAgeRange()
 
 

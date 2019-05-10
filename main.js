@@ -1,9 +1,9 @@
-let a = 2+2
+let a = 2 + 2
 
 
 //The switch statement start to compare (a) from the first case variant until match te nearest break
 
-switch(a){
+switch (a) {
     case 3:
         console.log('Too Small');
         break
@@ -18,13 +18,13 @@ switch(a){
 }
 //In the case that i wont use break the execution continues from the reached point until the end of the statement
 
-switch(a){
+switch (a) {
     case 3:
         console.log('Too Small');
-        
+
     case 4:
         console.log("Exactly");
-        
+
     case 5:
         console.log("Too Large");
     default:
@@ -36,7 +36,7 @@ switch(a){
 let c = "1";
 let b = 0;
 
-switch(+c) {
+switch (+c) {
     case b + 1:
         console.log("this runs, because +c is 1 exactly equals b+1")
         break;
@@ -45,9 +45,9 @@ switch(+c) {
 }
 
 
-let d= 1 + 1 + 2;
+let d = 1 + 1 + 2;
 
-switch(d){
+switch (d) {
     case 4:
         console.log('Right')
         break;
@@ -55,27 +55,27 @@ switch(d){
     case 5:
         console.log('Wrong')
         console.log('You have to go back to school');
-    break;
+        break;
     default:
         console.log("Something ios going total wrong")
 }
 
 
 let arg = prompt("Enter a value");
-    switch(arg){
-        case '0':
-        case '1':
-            console.log(" You choose one or zero ");
-            break
-        case '2':
-            console.log("You have choose two");
-            break;
-        case 3:
-            console.log("Never Executes")
-            break;
-        default:
-            console.log("an unknow Value")
-        }
+switch (arg) {
+    case '0':
+    case '1':
+        console.log(" You choose one or zero ");
+        break
+    case '2':
+        console.log("You have choose two");
+        break;
+    case 3:
+        console.log("Never Executes")
+        break;
+    default:
+        console.log("an unknow Value")
+}
 
 //let arg = prompt("Enter a value");
 //    switch(arg){
@@ -114,17 +114,15 @@ let arg = prompt("Enter a value");
 //}
 
 
- function checkBrowser(browser){
-     if(browser == "edge" ){
-         console.log("Ok you have got edge")
-     }
-     else if(browser == "Chrome"  || browser == "Firefox" || browser == "Safari" || browser == "Opera"){
-         console.log("we support those browsers")
-         }
-     else{
-         console.log("I hape that this page looks ok")
-     }
- }
+function checkBrowser(browser) {
+    if (browser == "edge") {
+        console.log("Ok you have got edge")
+    } else if (browser == "Chrome" || browser == "Firefox" || browser == "Safari" || browser == "Opera") {
+        console.log("we support those browsers")
+    } else {
+        console.log("I hape that this page looks ok")
+    }
+}
 checkBrowser("edge");
 
 
@@ -144,8 +142,8 @@ checkBrowser("edge");
 
 
 let z = +prompt('a?', ''); //cast the sting in a number
-switch(z){
-    case 0 : 
+switch (z) {
+    case 0:
         console.log(2.1);
         break;
     case 1:
@@ -155,9 +153,9 @@ switch(z){
     case 3:
         console.log('2,3')
         break;
-//    default:
-//        console.log("Please choose an other number")
-//    
+        //    default:
+        //        console.log("Please choose an other number")
+        //    
 }
 
 
@@ -166,19 +164,17 @@ switch(z){
 
 let year = +prompt('a?', '');
 
-if(year == 2015 ){
+if (year == 2015) {
     console.log('Right');
-}
-else{
+} else {
     console.log('Wrong');
 }
 
 let a;
 let age = prompt("How old are you?", '')
-if(age > 18){
+if (age > 18) {
     a = true
-}
-else{
+} else {
     a = false
 }
 
@@ -188,38 +184,35 @@ console.log(a);
 
 //let's do a simple example
 
-function  checkAge(age){
-let result = (age > 18) ? false : true
-console.log(result);
+function checkAge(age) {
+    let result = (age > 18) ? false : true
+    console.log(result);
 }
 
 checkAge(5);
-         
+
 //Multiple '?'
-         
+
 let ageOne = prompt('age?', "Set your age");
-let message = (age < 3) ? 'You are still baby':
-(age < 18) ? 'Hello!' : 
-(age < 100) ? 'Almost dead!' : 
-'You are dead';
+let message = (age < 3) ? 'You are still baby' :
+    (age < 18) ? 'Hello!' :
+    (age < 100) ? 'Almost dead!' :
+    'You are dead';
 
 console.log(message);
 
 //refactor the above the  statement if/else easy stuff
 
-function checkIfYouAreDead(){
-    let age = prompt('age?', "Set your age"); 
+function checkIfYouAreDead() {
+    let age = prompt('age?', "Set your age");
     let message;
-    if(age < 3){
+    if (age < 3) {
         message = "You are still baby"
-        }
-    else if(age < 18){
+    } else if (age < 18) {
         message = "Hello"
-        }
-    else if(age < 100){
+    } else if (age < 100) {
         message = "You are mature"
-    }
-    else {
+    } else {
         message = "You cannot set you birth day because you have die"
     }
     console.log(message)
@@ -240,12 +233,12 @@ checkIfYouAreDead();
 //}
 
 
-function rewriteCode(arg1,arg2,){
-    let a,b;
-    let message = ((a + b)  < 4) ? "Below":
-    'Over';
+function rewriteCode(arg1, arg2, ) {
+    let a, b;
+    let message = ((a + b) < 4) ? "Below" :
+        'Over';
     console.log(message);
-    
+
 }
 
 rewriteCode(1, 1);
@@ -267,14 +260,14 @@ rewriteCode(1, 1);
 //}
 
 
-function reformatAboveCode(login){
+function reformatAboveCode(login) {
 
-    let message = (login == 'Employee') ? 'Hello':
-    (login == 'Director') ? 'Greetings' : 
-    (login == '') ? 'No login' : 
-    'lalalal';
+    let message = (login == 'Employee') ? 'Hello' :
+        (login == 'Director') ? 'Greetings' :
+        (login == '') ? 'No login' :
+        'lalalal';
     console.log(message);
- }
+}
 
 reformatAboveCode('Director')
 reformatAboveCode('Employee')
@@ -284,26 +277,26 @@ reformatAboveCode('peace')
 //Logical Operators
 
 
-console.log( 1 || 0 ); 
-console.log( true || 'no matter what' ); 
+console.log(1 || 0);
+console.log(true || 'no matter what');
 
-console.log( null || 1 ); 
-console.log( null || 0 || 1 ); 
-console.log( undefined || null || 0 ); //all are false so return just the last value :) :) 
+console.log(null || 1);
+console.log(null || 0 || 1);
+console.log(undefined || null || 0); //all are false so return just the last value :) :) 
 
 
 
 // i cannot understand here why return the default user
 
-function getTheFirstTruthyValue(){
+function getTheFirstTruthyValue() {
     let currentUser = null;
     let defaultUser = 'John';
     let name = currentUser || defaultUser || "unamed"
     console.log(name);
-    
+
 }
 
-function shortCircuit(){
+function shortCircuit() {
     let x;
     true || (x = 1);
     console.log(x);
@@ -311,19 +304,19 @@ function shortCircuit(){
 shortCircuit(); //Ofcourse is undefined because we have not devclare the x if the operator is
 // false  || (x = 1) ==> x=1
 
-function andOperator(){
+function andOperator() {
     let hour = 12;
     let minutes 30;
-    
-    if(hour == 12 && minute == 30){ // T && T ==> T
+
+    if (hour == 12 && minute == 30) { // T && T ==> T
         console.log("The time is 12.30")
     }
 }
 
 andOperator();
 
-function andOperatorOne(){
-    if (1 && 0){   // F & T ==> False
+function andOperatorOne() {
+    if (1 && 0) { // F & T ==> False
         console.log("False")
     }
 }
@@ -334,24 +327,23 @@ andOperatorOne();
 // if the first operand is truthy,
 // AND returns the second operand:
 // 0 = false 1 = true and null = false;
-alert( 1 && 0 ); // 0
-alert( 1 && 5 ); // 5
+alert(1 && 0); // 0
+alert(1 && 5); // 5
 
 // if the first operand is falsy,
 // AND returns it. The second operand is ignored
-alert( null && 5 ); // null
-alert( 0 && "no matter what" ); // 0
+alert(null && 5); // null
+alert(0 && "no matter what"); // 0
 
 
 //Write an “if” condition to check that age is between 14 and 90 inclusively.
 //“Inclusively” means that age can reach the edges 14 or 90.
 
-function checkAgeRange(){
+function checkAgeRange() {
     let age = prompt("Enter an age?", "")
-    if(age >= 14 || age <= 90){
+    if (age >= 14 || age <= 90) {
         console.log("I the age range")
-    }
-    else{
+    } else {
         console.log("Outside of the range")
     }
 }
@@ -359,9 +351,9 @@ checkAgeRange()
 
 //What will the results of the expressions be inside if(...)?
 
-if (-1 || 0) alert( 'first' ); // F || F = True;
-if (-1 && 0) alert( 'second' ); // T && F = False
-if (null || -1 && 1) alert( 'third' ); // F || F || T ==>T (execute)
+if (-1 || 0) alert('first'); // F || F = True;
+if (-1 && 0) alert('second'); // T && F = False
+if (null || -1 && 1) alert('third'); // F || F || T ==>T (execute)
 
 //Write the code which asks for a login with prompt.
 //
@@ -389,13 +381,8 @@ function logIn() {
 
     } else if (role == '' || role == null) {
         console.log("Canceled")
-    }
-    else{
+    } else {
         console.log("Sorry i don't know you")
     }
 }
 logIn();
-
-
-
-

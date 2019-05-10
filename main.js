@@ -75,5 +75,87 @@ let arg = prompt("Enter a value");
             break;
         default:
             console.log("an unknow Value")
-        
-    }
+        }
+
+//let arg = prompt("Enter a value");
+//    switch(arg){
+//        case '0':
+//        case '1':
+//            console.log(" You choose one or zero ");
+//            break
+//        case '2':
+//            console.log("You have choose two");
+//            break;
+//        case 3:
+//            console.log("Never Executes")
+//            break;
+//        default:
+//            console.log("an unknown Value")
+//        
+//    }
+
+
+//I had to rewrite the following statement using if/else statement
+
+//switch (browser) {
+//  case 'Edge':
+//    alert( "You've got the Edge!" );
+//    break;
+//
+//  case 'Chrome':
+//  case 'Firefox':
+//  case 'Safari':
+//  case 'Opera':
+//    alert( 'Okay we support these browsers too' );
+//    break;
+//
+//  default:
+//    alert( 'We hope that this page looks ok!' );
+//}
+
+
+ function checkBrowser(browser){
+     if(browser == "edge" ){
+         console.log("Ok you have got edge")
+     }
+     else if(browser == "Chrome"  || browser == "Firefox" || browser == "Safari" || browser == "Opera"){
+         console.log("we support those browsers")
+         }
+     else{
+         console.log("I hape that this page looks ok")
+     }
+ }
+checkBrowser("edge");
+
+
+//I had to rewrite the followwing statement using if/else statement
+//let a = +prompt('a?', '');
+//
+//if (a == 0) {
+//  alert( 0 );
+//}
+//if (a == 1) {
+//  alert( 1 );
+//}
+//if (a == 2 || a == 3) {
+//  alert( '2,3' );
+//}
+
+
+
+let z = +prompt('a?', ''); //cast the sting in a number
+switch(z){
+    case 0 : 
+        console.log(2.1);
+        break;
+    case 1.1:
+        console.log(1);
+        break;
+    case 2.3:
+    case 3:
+        console.log('2,3')
+        break;
+//    default:
+//        console.log("Please choose an other nymber")
+//    
+}

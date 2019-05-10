@@ -156,6 +156,77 @@ switch(z){
         console.log('2,3')
         break;
 //    default:
-//        console.log("Please choose an other nymber")
+//        console.log("Please choose an other number")
 //    
 }
+
+//Conditional operators: if, '?'
+
+
+let year = +prompt('a?', '');
+
+if(year == 2015 ){
+    console.log('Right');
+}
+else{
+    console.log('Wrong');
+}
+
+let a;
+let age = prompt("How old are you?", '')
+if(age > 18){
+    a = true
+}
+else{
+    a = false
+}
+
+console.log(a);
+
+//Conditional operator ?
+
+//let's do a simple example
+
+function  checkAge(age){
+let result = (age > 18) ? false : true
+console.log(result);
+}
+
+checkAge(5);
+         
+//Multiple '?'
+         
+let ageOne = prompt('age?', "Set your age");
+let message = (age < 3) ? 'You are still baby':
+(age < 18) ? 'Hello!' : 
+(age < 100) ? 'Almost dead!' : 
+'You are dead';
+
+console.log(message);
+
+//refactor the above the  statement if/else easy stuff
+
+function checkIfYouAreDead(){
+    let age = prompt('age?', "Set your age"); 
+    let message;
+    if(age < 3){
+        message = "You are still baby"
+        }
+    else if(age < 18){
+        message = "Hello"
+        }
+    else if(age < 100){
+        message = "You are mature"
+    }
+    else {
+        message = "You cannot set you birth day because you have die"
+    }
+    console.log(message)
+}
+
+checkIfYouAreDead();
+
+
+
+
+

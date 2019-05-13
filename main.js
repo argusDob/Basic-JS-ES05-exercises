@@ -1,4 +1,4 @@
-let a = 2 + 2
+var a = 2 + 2
 
 
 //The switch statement start to compare (a) from the first case variant until match te nearest break
@@ -33,8 +33,8 @@ switch (a) {
 
 // "1" = 1 //true
 // "2" > "12" //false
-let c = "1";
-let b = 0;
+var c = "1";
+var b = 0;
 
 switch (+c) {
     case b + 1:
@@ -45,7 +45,7 @@ switch (+c) {
 }
 
 
-let d = 1 + 1 + 2;
+var d = 1 + 1 + 2;
 
 switch (d) {
     case 4:
@@ -61,7 +61,7 @@ switch (d) {
 }
 
 
-let arg = prompt("Enter a value");
+var arg = prompt("Enter a value");
 switch (arg) {
     case '0':
     case '1':
@@ -77,7 +77,7 @@ switch (arg) {
         console.log("an unknow Value")
 }
 
-//let arg = prompt("Enter a value");
+//var arg = prompt("Enter a value");
 //    switch(arg){
 //        case '0':
 //        case '1':
@@ -141,7 +141,7 @@ checkBrowser("edge");
 
 
 
-let z = +prompt('a?', ''); //cast the sting in a number
+var z = +prompt('a?', ''); //cast the sting in a number
 switch (z) {
     case 0:
         console.log(2.1);
@@ -162,7 +162,7 @@ switch (z) {
 //Conditional operators: if, '?'
 
 
-let year = +prompt('a?', '');
+var year = +prompt('a?', '');
 
 if (year == 2015) {
     console.log('Right');
@@ -170,8 +170,8 @@ if (year == 2015) {
     console.log('Wrong');
 }
 
-let a;
-let age = prompt("How old are you?", '')
+var a;
+var age = prompt("How old are you?", '')
 if (age > 18) {
     a = true
 } else {
@@ -185,7 +185,7 @@ console.log(a);
 //let's do a simple example
 
 function checkAge(age) {
-    let result = (age > 18) ? false : true
+    var result = (age > 18) ? false : true
     console.log(result);
 }
 
@@ -193,8 +193,8 @@ checkAge(5);
 
 //Multiple '?'
 
-let ageOne = prompt('age?', "Set your age");
-let message = (age < 3) ? 'You are still baby' :
+var ageOne = prompt('age?', "Set your age");
+var message = (age < 3) ? 'You are still baby' :
     (age < 18) ? 'Hello!' :
     (age < 100) ? 'Almost dead!' :
     'You are dead';
@@ -204,8 +204,8 @@ console.log(message);
 //refactor the above the  statement if/else easy stuff
 
 function checkIfYouAreDead() {
-    let age = prompt('age?', "Set your age");
-    let message;
+    var age = prompt('age?', "Set your age");
+    var message;
     if (age < 3) {
         message = "You are still baby"
     } else if (age < 18) {
@@ -234,8 +234,8 @@ checkIfYouAreDead();
 
 
 function rewriteCode(arg1, arg2, ) {
-    let a, b;
-    let message = ((a + b) < 4) ? "Below" :
+    var a, b;
+    var message = ((a + b) < 4) ? "Below" :
         'Over';
     console.log(message);
 
@@ -262,7 +262,7 @@ rewriteCode(1, 1);
 
 function reformatAboveCode(login) {
 
-    let message = (login == 'Employee') ? 'Hello' :
+    var message = (login == 'Employee') ? 'Hello' :
         (login == 'Director') ? 'Greetings' :
         (login == '') ? 'No login' :
         'lalalal';
@@ -289,15 +289,15 @@ console.log(undefined || null || 0); //all are false so return just the last val
 // i cannot understand here why return the default user
 
 function getTheFirstTruthyValue() {
-    let currentUser = null;
-    let defaultUser = 'John';
-    let name = currentUser || defaultUser || "unamed"
+    var currentUser = null;
+    var defaultUser = 'John';
+    var name = currentUser || defaultUser || "unamed"
     console.log(name);
 
 }
 
 function shortCircuit() {
-    let x;
+    var x;
     true || (x = 1);
     console.log(x);
 }
@@ -305,8 +305,8 @@ shortCircuit(); //Ofcourse is undefined because we have not devclare the x if th
 // false  || (x = 1) ==> x=1
 
 function andOperator() {
-    let hour = 12;
-    let minutes 30;
+    var hour = 12;
+    var minutes 30;
 
     if (hour == 12 && minute == 30) { // T && T ==> T
         console.log("The time is 12.30")
@@ -340,7 +340,7 @@ alert(0 && "no matter what"); // 0
 //“Inclusively” means that age can reach the edges 14 or 90.
 
 function checkAgeRange() {
-    let age = prompt("Enter an age?", "")
+    var age = prompt("Enter an age?", "")
     if (age >= 14 || age <= 90) {
         console.log("I the age range")
     } else {
@@ -366,11 +366,11 @@ if (null || -1 && 1) alert('third'); // F || F || T ==>T (execute)
 //For an empty string or cancelled input, show “Canceled.”
 
 function logIn() {
-    let role = prompt("Who is there?")
+    var role = prompt("Who is there?")
 
     if (role == 'Admin') {
         console.log("Welcome admin")
-        let password = prompt('Please set the password');
+       var password = prompt('Please set the password');
         if (password == 'TheMaster') {
             console.log('Welcome');
         } else if (password == null || password == '') {

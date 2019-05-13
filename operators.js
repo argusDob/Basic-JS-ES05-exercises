@@ -75,3 +75,50 @@ console.log(2 ** 3);// 2^3 2*2*2
 console.log(2 ** 4);// 2^4 2* 2* 2 * 2
 
 
+//Continue with simple thinks...
+
+
+var counter = 2
+counter++;
+console.log(counter); //3
+
+var counterTwo = 3
+counterTwo--;
+console.log(counterTwo) //2
+
+
+//Modify in place
+
+
+var n = 2;
+n +=5 // n = n +5  5 + 2 =7
+console.log(n);
+n *=2 // n = n * 2 7 * 2 = 14
+console.log(m);
+
+var n =2
+n *= 3 + 5 // n = 2 ( 3 + 5)
+console.log(n) //16
+
+
+// Tasks 
+//Guess the Output
+
+
+var a = 1, b = 1
+
+var c = ++a; //2
+var d = b++; //1
+
+
+//What are the values of a and x after the code below?
+var a = 2;
+var x = 1 + (a *= 2);
+
+console.log(a); // a = a * 2 =4
+console.log(x);// 5
+
+
+
+
+

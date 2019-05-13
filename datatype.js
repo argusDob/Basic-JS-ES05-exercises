@@ -28,5 +28,35 @@ var answer3 = 'He is called "Johnny"'; //Double quotes inside single quotes
 var x1 = 34.00;     // double
 var x2 = 34;        // integer
 
+var cars = ["Saab", "Volvo", "BMW"]; // A simple classic awesome array.
+
+//Let's create a simple Person obj.
+
+var person = {
+    
+    firstname : "John",
+    lastName: "Dimitriou",
+    age:34,
+    eycolor: "red",
+    married : false
+}
+
+console.log(person);
+
+
+console.log(typeof(0)); //number
+console.log(typeof(2.343452)); //number
+console.log(typeof("Ioannis Dimitriou")) //string
+
+
+
+var number;
+console.log(number); //undefined i have not define a variable yet
+console.log("Print an unassignement value " , typeof(number))
+
+var name = "";
+console.log(name)// "" Of course it is not undefinied because i have declared an empty String
+console.log(typeof(name)) // The type of an empty String is String :) :) 
+
 
 

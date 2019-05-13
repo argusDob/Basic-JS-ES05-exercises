@@ -58,5 +58,42 @@ var name = "";
 console.log(name)// "" Of course it is not undefinied because i have declared an empty String
 console.log(typeof(name)) // The type of an empty String is String :) :) 
 
+var cars = ["Saab", "Volvo", "BMW"]; // A simple classic awesome array.
+
+//Let's create a simple Person obj.
+
+var person = {
+    
+    firstname : "John",
+    lastName: "Dimitriou",
+    age:34,
+    eycolor: "red",
+    married : false
+}
+
+console.log(person);
+
+
+console.log(typeof(0)); //number
+console.log(typeof(2.343452)); //number
+console.log(typeof("Ioannis Dimitriou")) //string
+
+
+
+var number;
+console.log(number); //undefined i have not define a variable yet
+console.log("Print an unassignement value " , typeof(number))
+
+var name = "";
+console.log(name)// "" Of course it is not undefinied because i have declared an empty String
+console.log(typeof(name)) // The type of an empty String is String :) :) 
+
+
+//Important!!!!!!! The type of an array in JS is obj ,so the typeOf will be return an object instead of an array...
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function"
+
 
 

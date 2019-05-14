@@ -66,5 +66,44 @@ if(age < 16){
 
 //welcome(); I will get an error because the welcome is accessible inside the block and not outside;
 
+sayHiOne("Ioannis"); // Hello, John
+
+function sayHiOne(name) {
+  console.log( `Hello, ${name}` );
+}
+
+
+
+ // error!
+//Uncaught ReferenceError: Cannot access 'sayHi' before initialization
+//Return a reference error because I call the function before the n initalization
+var sayHi = function(name) {  // (*) no magic any more
+  console.log( `Hello, ${name}` );
+};
+
+
+var age = 12;
+
+if(age < 16){
+    welcome();
+    function welcome(){
+        console.log("Hello World");
+    }
+}
+
+//welcome(); I will get an error because the welcome is accessible inside the block and not outside;
+
+//Question:What can we do to make welcome visible outside of if?
+//Answer: Easy stuff! I will declare a global variable and i will assign the function in it so i will have access from everywere
+
+var welcome;
+welcome = function(){
+    console.log("lalal");
+}
+
+
+
+
+
 
 

@@ -164,6 +164,61 @@ function checkAge(age){
 
 checkAge(5);
 
+/Write a function min(a,b) which returns the least of two numbers a and b.
+function min(a,b){
+    if(a < b){
+        console.log(a)
+    }
+    else{
+        console.log(b)
+    }
+}
+
+min(-15, -5);
+
+
+
+
+function pow(x,n){
+    
+    if(Number.isInteger(x) && Number.isInteger(n)){
+    var power = x * n
+    console.log(power);
+    }
+    else{
+        console.log("Please set only integer numbers")
+    }
+}
+
+pow(2, 3)
+
+
+//Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result. Tutorial's assignement
+
+function pow(x, n) {
+  let result = x;
+
+  for (let i = 1; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+  alert(`Power ${n} is not supported,
+    use an integer greater than 0`);
+} else {
+  alert( pow(x, n) );
+}
+
+
+
+
+
 
 
 

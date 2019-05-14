@@ -120,4 +120,51 @@ showMovie(age);
 
 //********To here ***********
 
+function showPrimes(n) {
+
+  for (let i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+
+    console.log(i);  // a prime
+  }
+}
+
+
+//This function check for reminders. If the reninder == 0 the output is even number Otherwise is a prime number
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if ( n % i == 0) return false;
+  }
+  return true;
+}
+
+showPrimes(5);
+
+
+
+//TASKS
+//Rewrite it, to perform the same, but without if, in a single line.
+//
+//Make two variants of checkAge:
+//
+//Using a question mark operator ?
+//Using OR ||
+
+//function checkAge(age) {
+//  if (age > 18) {
+//    return true;
+//  } else {
+//    return confirm('Do you have your parents permission to access this page?');
+//  }
+//}
+
+function checkAge(age){
+    return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+checkAge(5);
+
+
+
+
 

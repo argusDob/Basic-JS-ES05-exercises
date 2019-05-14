@@ -37,3 +37,34 @@ function() { console.log('You agreed,')},
 function() {console.log('You cancel the execution')}
 
 )
+
+
+sayHiOne("Ioannis"); // Hello, John
+
+function sayHiOne(name) {
+  console.log( `Hello, ${name}` );
+}
+
+
+
+ // error!
+//Uncaught ReferenceError: Cannot access 'sayHi' before initialization
+//Return a reference error because I call the function before the n initalization
+var sayHi = function(name) {  // (*) no magic any more
+  console.log( `Hello, ${name}` );
+};
+
+
+var age = 12;
+
+if(age < 16){
+    welcome();
+    function welcome(){
+        console.log("Hello World");
+    }
+}
+
+//welcome(); I will get an error because the welcome is accessible inside the block and not outside;
+
+
+

@@ -78,3 +78,46 @@ function defaultValue(from, text = "no text given"){
     console.log(from + ": " + text)
 }
 defaultValue("Ann");
+
+function sum(a,b){
+    return a + b;
+}
+
+var result = sum(1,2);
+console.log(result)
+console.log(sum(54,54))
+
+
+//I would like to discuss the data flow for this function *******from here....********
+//
+function overAge(age){
+    if(age > 18){
+        return true;
+    }
+    else {
+        return confirm("Do you have permissions from your parents?")
+    }
+}
+
+var age =prompt("How old are you", 18);
+if (overAge(age)){
+   console.log('Access granted');
+}
+else{
+   console.log('Access denied')
+}
+
+function showMovie(age){
+    if(!overAge(age)){
+        return;
+    }
+    else{
+        console.log('Showing you the movie')
+    }
+}
+
+showMovie(age);
+
+//********To here ***********
+
+

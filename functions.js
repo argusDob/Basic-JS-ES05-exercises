@@ -60,7 +60,7 @@ function testFunction(arg1, arg2){
 testFunction("I am function " , "and I use parameters");
 testFunction("I am a function " , " and i can use as many as parameters i want")
 
-//I am not sure that i have understand this example vary well. I would like to discuss on it
+//I am not sure that i have understand this example very well. I would like to discuss on it
 //with Chris!!
 function getCopyOfValue(from, text){
     from = '@@@' + from + '@@@'

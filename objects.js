@@ -66,14 +66,19 @@ for(var code in codes){
 }
 
 //Const object
+//*********************Further explanation********************
 const user = {
   name: "John"
 };
 
 user.age = 25; // (*)
 user.name = "Maria"   //CHRIS IS IT NORMAL THAT I CAN CHANGE THE PROPERTY?
-console.log(user.name); // 25
+console.log(user.name); // 
+var admin = user;
 
-
+// The user has a const var so should not be change- Right?????
+admin.name= "Argus";
+console.log(admin.name)
+//******************************************************************
 
 

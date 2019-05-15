@@ -100,4 +100,22 @@ console.log(user);
 delete user.name;
 console.log(user)
 
+//Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+
+
+function isEmpty(obj){
+    for (let in obj){
+    return false;
+    }
+    return true;
+}
+
+
+var schedule = {}
+var user = {name: "Ioannis"};
+
+isEmpty(schedule);
+isEmpty(user);
+
+
 

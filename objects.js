@@ -190,6 +190,7 @@ var calculator = {
     //console.log(this.valueOne)
     console.log(calculator.sum());
     console.log(calculator.mul());
+//**********************_________________****************************
     
     
 

@@ -34,7 +34,37 @@ console.log(user.noSuchProperty); //true does not contain properties The user ob
 var user = { name: "John", age: 30 };
 
 console.log( "age" in user ); // true, user.age exists
-console.lo( "blabla" in user ); // false, us
+console.log( "blabla" in user ); // false, us
+
+
+// for in loop
+
+var user = {
+    name: "Ioannis",
+    age: 30,
+    isAdmin: true,
+    "print the key": "i am a value"
+};
+
+for(var key in user){
+    console.log(key)
+//    console.log(user[key]);
+    
+}
+
+// Ordered like an object
+var codes = {
+    "49": "Germany",
+    "31": "Netherlands",
+    "30": "Greece",
+    "1":  "USA"    
+    
+}
+
+for(var code in codes){
+    console.log(code);
+}
+
 
 
 

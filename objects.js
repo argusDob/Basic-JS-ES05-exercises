@@ -25,5 +25,14 @@ var bag = {
 console.log(bag[fruit]); //WHY IS UNDEFIIIIINEEEEEED :( )
 
 
+//Check if an obj contains keys
+var user = {}
+
+console.log(user.noSuchProperty); //true does not contain properties The user obj is empty.
+
+
+
+
+
 
 

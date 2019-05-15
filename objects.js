@@ -167,7 +167,7 @@ console.log(menu)
 //read() prompts for two values and saves them as object properties.
 //sum() returns the sum of saved values.
 //mul() multiplies saved values and returns the resu
-var calc = {
+var calculator = {
  
         
     sum() {
@@ -176,17 +176,20 @@ var calc = {
     mul() {
         return this.valueOne * this.valueTwo
     },
-    // I GET HERE A SYNTAX ERROR
+    
        read(){
-        valueOne: 10,
-        valueTwo: 20
+        this.valueOne = 10;
+        this.valueTwo = 20;
+           console.log(this.valueOne)
+           console.log(this.valueTwo)
     },
 };
 
     calculator.read();
-    console.log(calculator.sum);
-    console.log(calculator.mul);
+    console.log(calculator.read())
+    //console.log(this.valueOne)
+    console.log(calculator.sum());
+    console.log(calculator.mul());
     
     
-
 

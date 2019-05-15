@@ -30,8 +30,11 @@ var user = {}
 
 console.log(user.noSuchProperty); //true does not contain properties The user obj is empty.
 
+//Check if an obj contains keys with in operator
+var user = { name: "John", age: 30 };
 
-
+console.log( "age" in user ); // true, user.age exists
+console.lo( "blabla" in user ); // false, us
 
 
 

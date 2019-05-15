@@ -16,5 +16,14 @@ console.log(user);
 var key = prompt("what is the user name?", "");
 console.log(user[key]);
 
+var fruit = "Tangerine";
+var bag = {
+    
+    [fruit + 'Computers']: 5,
+};
+
+console.log(bag[fruit]); //WHY IS UNDEFIIIIINEEEEEED :( )
+
+
 
 

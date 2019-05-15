@@ -81,4 +81,23 @@ admin.name= "Argus";
 console.log(admin.name)
 //******************************************************************
 
+//TASKS
+//
+//Create an empty object user.
+//Add the property name with the value John.
+//Add the property surname with the value Smith.
+//Change the value of the name to Pete.
+//Remove the property name from the object.
+
+
+var user= {
+    name: "ioannis",
+    surname: "dimitriou"
+}
+
+user.name = "Argus"
+console.log(user);
+delete user.name;
+console.log(user)
+
 

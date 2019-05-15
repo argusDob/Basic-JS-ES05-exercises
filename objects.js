@@ -129,4 +129,35 @@ for (var key in salaries){
 }
 console.log(sum);
 
+//Create a function multiplyNumeric(obj) that multiplies all numeric properties of obj by 2.
+
+var menu = {
+    width: 200,
+    heigh: 300,
+    //    title: "My menu"
+}
+
+
+console.log(typeof menu.width); //number
+
+function multiplyNumeric(obj) {
+    var res;
+    var message;
+    for (var key in obj) {
+        if (typeof obj[key] == 'number') {
+            obj[key] *= 2;
+        }
+
+    }
+
+}
+
+multiplyNumeric(menu);
+console.log(menu)
+//
+////Output
+//var menu{
+//    width:400,
+//    height:600
+//}
 

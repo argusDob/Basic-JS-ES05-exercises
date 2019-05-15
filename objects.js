@@ -161,3 +161,32 @@ console.log(menu)
 //    height:600
 //}
 
+
+//Create an object calculator with three methods:
+//
+//read() prompts for two values and saves them as object properties.
+//sum() returns the sum of saved values.
+//mul() multiplies saved values and returns the resu
+var calc = {
+ 
+        
+    sum() {
+        return this.valueOne + this.valueTwo
+    },
+    mul() {
+        return this.valueOne * this.valueTwo
+    },
+    // I GET HERE A SYNTAX ERROR
+       read(){
+        valueOne: 10,
+        valueTwo: 20
+    },
+};
+
+    calculator.read();
+    console.log(calculator.sum);
+    console.log(calculator.mul);
+    
+    
+
+

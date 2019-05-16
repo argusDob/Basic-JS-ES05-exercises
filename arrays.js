@@ -134,6 +134,19 @@ console.log(firstName);
 console.log(surname);
 
 
+//convert an amazing obj to JSON string using JSON.stringify() method;;;
+var student = {
+    name: 'John',
+    age: 30,
+    isAdmin:false,
+    courses: ['java','C++', 'javascript'],
+}
+
+console.log(student);
+var json = JSON.stringify(student);
+console.log(typeof json);
+console.log(json);
+
 
 
 

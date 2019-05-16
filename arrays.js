@@ -53,4 +53,38 @@ console.log(array.length);
 array[Math.floor((array.length - 1) / 2)] = "Classics";
 console.log(array);
 
+//*****************************Arrays**********************************
+
+//Write the function sumInput() that:
+//
+//Asks the user for values using prompt and stores the values in the array.
+//Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+//Calculates and returns the sum of array items.
+//P.S. A zero 0 is a valid number, please don’t stop the input on zero.
+
+
+function sum(){
+    var myarr = [];
+    var sum = 0;
+    while(true){
+    var value =prompt("Please insert a value : ", 0);
+    if(value === '' || value === null){
+        break;
+    }
+    else{
+        tonumb = Number(value);
+        myarr.push(tonumb);
+        console.log(myarr);
+        for(var i=0; i<myarr.length; i++){
+             sum = sum + myarr[i];
+        }
+        
+        console.log(sum);
+    }
+    }
+}
+
+
+sum();
+
 

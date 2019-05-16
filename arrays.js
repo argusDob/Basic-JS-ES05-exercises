@@ -99,6 +99,15 @@ console.log(map.get('1'));
 console.log(map.get(true));
 console.log(map.size);
 
+//Map also use objects as keys :o :o
+var ioan = {name: "ioannis"};
+var checkMap = new Map();
+ checkMap.set(ioan, 2632830);
+
+console.log(checkMap.get(ioan));
+console.log(checkMap);
+
+
 
 
 

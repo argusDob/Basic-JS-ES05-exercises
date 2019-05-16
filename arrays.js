@@ -126,6 +126,14 @@ for (let entry of recipeMap) { // the same as of recipeMap.entries()
   console.log(entry); // cucumber,500 (and so on)
 }
 
+//Destructing Arrays
+var arr = ["Ioan", "Lisa"];
+
+var [firstName, surname, test] = arr;
+console.log(firstName);
+console.log(surname);
+
+
 
 
 

@@ -107,6 +107,25 @@ var checkMap = new Map();
 console.log(checkMap.get(ioan));
 console.log(checkMap);
 
+//How to iterate througth the map
+var recipeMap = new Map([
+  ['cucumber', 500],
+  ['tomatoes', 350],
+  ['onion',    50]
+]);
+
+for (let vegetable of recipeMap.keys()) {
+  console.log(vegetable); // cucumber, tomatoes, onion
+}
+
+for (let amount of recipeMap.values()) {
+  console.log(amount); // 500, 350, 50
+}
+
+for (let entry of recipeMap) { // the same as of recipeMap.entries()
+  console.log(entry); // cucumber,500 (and so on)
+}
+
 
 
 
